@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plataforma de Gestão da Incubadora Marandu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Menu principal">
+      <div class="brand">
+        <div class="brand-mark">M</div>
+        <div>
+          <strong>Marandu</strong>
+          <span>Gestão da Incubadora</span>
+        </div>
+      </div>
+
+      <nav class="menu" id="menu">
+        <button class="active" data-view="visao" type="button"><span data-icon="dashboard"></span>Visão Geral</button>
+        <button data-view="sitemap" type="button"><span data-icon="route"></span>Site Map</button>
+        <button data-view="dashboard" type="button"><span data-icon="dashboard"></span>Dashboard Executivo</button>
+        <button data-view="operacional" type="button"><span data-icon="kanban"></span>Dashboard Operacional</button>
+        <button data-view="empresas" type="button"><span data-icon="building"></span>Empresas</button>
+        <button data-view="acompanhamento" type="button"><span data-icon="audit"></span>Acompanhamento</button>
+        <button data-view="diagnostico" type="button"><span data-icon="file-check"></span>Diagnóstico</button>
+        <button data-view="indicadores" type="button"><span data-icon="chart"></span>Indicadores</button>
+        <button data-view="trl" type="button"><span data-icon="route"></span>TRL</button>
+        <button data-view="evidencias" type="button"><span data-icon="file-check"></span>Evidências</button>
+        <button data-view="documentos" type="button"><span data-icon="folder"></span>Documentos</button>
+        <button data-view="planos" type="button"><span data-icon="kanban"></span>Planos de Ação</button>
+        <button data-view="mentorias" type="button"><span data-icon="calendar"></span>Mentorias</button>
+        <button data-view="relatorios" type="button"><span data-icon="report"></span>Relatórios</button>
+        <button data-view="powerbi" type="button"><span data-icon="powerbi"></span>Power BI</button>
+        <button data-view="auditoria" type="button"><span data-icon="audit"></span>Auditoria</button>
+        <button data-view="configuracoes" type="button"><span data-icon="settings"></span>Configurações</button>
+        <button data-view="roadmap" type="button"><span data-icon="report"></span>Roadmap</button>
+      </nav>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" type="button" aria-label="Abrir menu"><span data-icon="menu"></span></button>
+        <div class="search">
+          <span data-icon="search"></span>
+          <input id="globalSearch" type="search" placeholder="Pesquisar empresas, indicadores, documentos...">
+        </div>
+        <div class="top-actions">
+          <button class="icon-button" type="button" aria-label="Notificações"><span data-icon="bell"></span><b>3</b></button>
+          <button class="mode-pill" type="button"><span data-icon="sun"></span>Modo claro</button>
+          <button class="profile" type="button"><span>DG</span><strong>Diretoria</strong></button>
+        </div>
+      </header>
+
+      <main>
+        <section class="view active" id="visao">
+          <div class="hero-panel">
+            <div>
+              <span class="eyebrow">Proposta visual do produto</span>
+              <h1>Marandu Nexus</h1>
+              <p>Uma plataforma inteligente para centralizar a gestão da incubadora, acompanhar empresas, organizar evidências, monitorar indicadores e apoiar decisões da diretoria.</p>
+              <div class="hero-actions">
+                <button class="primary-button" data-view-target="sitemap" type="button">Ver organização do sistema</button>
+                <button class="ghost-button" data-view-target="dashboard" type="button">Abrir demonstração</button>
+              </div>
+            </div>
+            <div class="hero-card">
+              <span>Conceito central</span>
+              <strong>Da operação ao BI, tudo conectado.</strong>
+              <p>O protótipo mostra como será a experiência de uso, os módulos planejados e a navegação futura. Os dados são fictícios e servem apenas para apresentação.</p>
+            </div>
+          </div>
+
+          <div class="concept-grid">
+            <article class="concept-card"><span>Objetivo</span><h2>Organizar a gestão da incubadora</h2><p>Reunir empresas, CERNE, TRL, documentos, mentorias, planos e relatórios em um único ambiente.</p></article>
+            <article class="concept-card"><span>Problema resolvido</span><h2>Menos planilhas e controles soltos</h2><p>A plataforma reduz dispersão de informação e facilita rastrear decisões, pendências e evidências.</p></article>
+            <article class="concept-card"><span>Usuários</span><h2>Gestão, equipe técnica e empresas</h2><p>Diretoria, gestores, analistas, mentores, empresas incubadas, auditores e conselho.</p></article>
+            <article class="concept-card"><span>Benefícios</span><h2>Clareza para decidir</h2><p>Visão executiva, acompanhamento operacional, histórico auditável e preparação para Power BI.</p></article>
+          </div>
+
+          <article class="panel">
+            <div class="panel-title"><h2>Como a gestora deve ler este protótipo</h2><span>Demonstração comercial</span></div>
+            <div class="feature-list">
+              <div><b>1</b><span>Entender a visão do produto e os módulos planejados.</span></div>
+              <div><b>2</b><span>Navegar pelas áreas para imaginar a experiência futura.</span></div>
+              <div><b>3</b><span>Validar se a organização faz sentido antes do desenvolvimento.</span></div>
+              <div><b>4</b><span>Priorizar o que entra no MVP e o que fica para versões futuras.</span></div>
+            </div>
+          </article>
+        </section>
+
+        <section class="view" id="sitemap">
+          <div class="page-heading">
+            <div><span class="eyebrow">Organização do produto</span><h1>Site Map do Marandu Nexus</h1><p>Mapa de navegação planejado para um SaaS profissional de gestão de incubadoras.</p></div>
+          </div>
+          <div class="sitemap-grid" id="siteMapGrid"></div>
+        </section>
+
+        <section class="view" id="dashboard">
+          <div class="page-heading">
+            <div>
+              <span class="eyebrow">Visão institucional</span>
+              <h1>Dashboard Executivo</h1>
+              <p>Área para a diretoria visualizar resultado geral, alertas, evolução da carteira e prioridades estratégicas.</p>
+            </div>
+            <button class="primary-button" data-view-target="empresas" type="button">Ver empresas</button>
+          </div>
+
+          <div class="kpi-grid" id="kpiGrid"></div>
+
+          <div class="content-grid">
+            <article class="panel wide">
+              <div class="panel-title">
+                <h2>Evolução da carteira</h2>
+                <span>Últimos 6 meses</span>
+              </div>
+              <div class="chart-bars" id="portfolioChart"></div>
+            </article>
+            <article class="panel">
+              <div class="panel-title">
+                <h2>Farol operacional</h2>
+                <span>Motor de regras</span>
+              </div>
+              <div class="donut-wrap">
+                <div class="donut" id="donut"></div>
+                <div class="legend" id="farolLegend"></div>
+              </div>
+            </article>
+          </div>
+
+          <div class="content-grid">
+            <article class="panel">
+              <div class="panel-title"><h2>Empresas prontas para evolução</h2><span>Prioridade da gestão</span></div>
+              <div class="compact-list" id="readyList"></div>
+            </article>
+            <article class="panel">
+              <div class="panel-title"><h2>Pendências críticas</h2><span>Checklist obrigatório</span></div>
+              <div class="compact-list" id="riskList"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="view" id="operacional">
+          <div class="page-heading"><div><span class="eyebrow">Rotina da equipe</span><h1>Dashboard Operacional</h1><p>Representa a mesa de trabalho dos analistas: pendências, validações, mentorias, prazos e tarefas críticas.</p></div></div>
+          <div class="content-grid">
+            <article class="panel wide">
+              <div class="panel-title"><h2>Fila de trabalho</h2><span>Simulação</span></div>
+              <div class="operations-grid" id="operationsGrid"></div>
+            </article>
+            <article class="panel">
+              <div class="panel-title"><h2>Alertas do dia</h2><span>Prioridades</span></div>
+              <div class="compact-list" id="dailyAlerts"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="view" id="empresas">
+          <div class="page-heading">
+            <div><span class="eyebrow">Carteira</span><h1>Empresas incubadas</h1><p>Tabela operacional com TRL, responsável, status e farol.</p></div>
+            <button class="primary-button" type="button" id="newCompany">Nova empresa</button>
+          </div>
+          <article class="panel">
+            <div class="table-toolbar">
+              <strong>Empresas acompanhadas</strong>
+              <select id="companyFilter" aria-label="Filtrar por status">
+                <option value="">Todos os status</option>
+                <option>Incubada</option>
+                <option>Graduada</option>
+                <option>Pré-incubada</option>
+              </select>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Empresa</th><th>Responsável</th><th>TRL</th><th>Área</th><th>Status</th><th>Farol</th><th></th></tr></thead>
+                <tbody id="companyRows"></tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+
+        <section class="view" id="acompanhamento">
+          <div class="page-heading"><div><span class="eyebrow">Jornada da empresa</span><h1>Acompanhamento</h1><p>Área onde a equipe visualiza a evolução da empresa ao longo do ciclo de incubação.</p></div></div>
+          <article class="panel">
+            <div class="journey" id="journey"></div>
+          </article>
+        </section>
+
+        <section class="view" id="diagnostico">
+          <div class="page-heading"><div><span class="eyebrow">Entrada e avaliação</span><h1>Diagnóstico</h1><p>Espaço conceitual para registrar maturidade inicial, necessidades, riscos e recomendações de incubação.</p></div></div>
+          <div class="content-grid">
+            <article class="panel wide">
+              <div class="panel-title"><h2>Diagnóstico da empresa</h2><span>Exemplo visual</span></div>
+              <div class="diagnosis-grid" id="diagnosisGrid"></div>
+            </article>
+            <article class="panel">
+              <div class="panel-title"><h2>Resultado esperado</h2><span>Saídas futuras</span></div>
+              <div class="compact-list" id="diagnosisOutputs"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="view" id="indicadores">
+          <div class="page-heading"><div><span class="eyebrow">Performance</span><h1>Indicadores</h1><p>Monitoramento de metas, resultados e pendências por processo CERNE.</p></div></div>
+          <div class="indicator-grid" id="indicatorCards"></div>
+        </section>
+
+        <section class="view" id="trl">
+          <div class="page-heading"><div><span class="eyebrow">Maturidade tecnológica</span><h1>Roadmap TRL</h1><p>Visualização do avanço das empresas de TRL 1 a TRL 9.</p></div></div>
+          <article class="panel">
+            <div class="trl-roadmap" id="trlRoadmap"></div>
+          </article>
+        </section>
+
+        <section class="view" id="evidencias">
+          <div class="page-heading"><div><span class="eyebrow">Comprovação</span><h1>Evidências</h1><p>Documentos enviados, validados, pendentes e disponíveis para auditoria.</p></div></div>
+          <article class="panel">
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Documento</th><th>Empresa</th><th>Data</th><th>Responsável</th><th>Status</th><th>Ações</th></tr></thead>
+                <tbody id="evidenceRows"></tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+
+        <section class="view" id="documentos">
+          <div class="page-heading"><div><span class="eyebrow">Biblioteca</span><h1>Documentos padrão</h1><p>Modelos aceitos como evidências no processo de incubação.</p></div></div>
+          <div class="doc-grid" id="documentCards"></div>
+        </section>
+
+        <section class="view" id="planos">
+          <div class="page-heading"><div><span class="eyebrow">Execução</span><h1>Planos de Ação</h1><p>Kanban de acompanhamento das pendências geradas pelo motor de regras.</p></div></div>
+          <div class="kanban" id="kanban"></div>
+        </section>
+
+        <section class="view" id="mentorias">
+          <div class="page-heading"><div><span class="eyebrow">Agenda</span><h1>Mentorias</h1><p>Próximas reuniões, mentores e histórico de acompanhamento.</p></div></div>
+          <div class="content-grid">
+            <article class="panel wide"><div class="calendar" id="calendar"></div></article>
+            <article class="panel"><div class="panel-title"><h2>Próximas mentorias</h2><span>Semana atual</span></div><div class="compact-list" id="mentoringList"></div></article>
+          </div>
+        </section>
+
+        <section class="view" id="relatorios">
+          <div class="page-heading"><div><span class="eyebrow">Inteligência</span><h1>Relatórios</h1><p>Relatórios executivos preparados para diretoria, auditoria e conselho.</p></div></div>
+          <div class="report-grid" id="reportCards"></div>
+        </section>
+
+        <section class="view" id="powerbi">
+          <div class="page-heading"><div><span class="eyebrow">BI integrado</span><h1>Power BI</h1><p>Área reservada para incorporar o relatório institucional.</p></div><button class="primary-button" type="button">Abrir Dashboard Power BI</button></div>
+          <article class="panel embed-panel"><span data-icon="powerbi"></span><h2>Relatório Power BI incorporado</h2><p>Este espaço receberá o embed seguro do relatório oficial da incubadora.</p></article>
+        </section>
+
+        <section class="view" id="auditoria">
+          <div class="page-heading"><div><span class="eyebrow">Rastreabilidade</span><h1>Auditoria</h1><p>Histórico de aprovações, alterações e pareceres.</p></div></div>
+          <article class="panel"><div class="timeline" id="auditTimeline"></div></article>
+        </section>
+
+        <section class="view" id="configuracoes">
+          <div class="page-heading"><div><span class="eyebrow">Administração</span><h1>Configurações</h1><p>Cadastros estruturantes da plataforma.</p></div></div>
+          <div class="settings-grid" id="settingsGrid"></div>
+        </section>
+
+        <section class="view" id="roadmap">
+          <div class="page-heading"><div><span class="eyebrow">Evolução do produto</span><h1>Roadmap planejado</h1><p>Funcionalidades previstas para transformar este protótipo em uma plataforma real e escalável.</p></div></div>
+          <div class="roadmap-grid" id="roadmapGrid"></div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <div class="drawer" id="companyDrawer" aria-hidden="true">
+    <div class="drawer-backdrop" data-close-drawer></div>
+    <aside class="drawer-panel">
+      <button class="drawer-close" data-close-drawer type="button" aria-label="Fechar">×</button>
+      <div id="companyDetail"></div>
+    </aside>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
