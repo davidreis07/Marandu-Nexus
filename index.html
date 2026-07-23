@@ -269,12 +269,44 @@
 
         <section class="view" id="indicadores">
           <div class="page-heading">
-            <div><span class="eyebrow">Performance</span>
+            <div><span class="eyebrow">Catálogo CERNE</span>
               <h1>Indicadores</h1>
-              <p>Monitoramento de metas, resultados e pendências por processo CERNE.</p>
+              <p>Catálogo completo dos indicadores CERNE mapeados para a incubadora e empresas, com filtros para
+                consulta executiva.</p>
             </div>
           </div>
           <div class="indicator-grid" id="indicatorCards"></div>
+          <article class="panel">
+            <div class="table-toolbar indicator-toolbar">
+              <strong>Todos os indicadores CERNE</strong>
+              <div class="filter-row">
+                <input id="indicatorSearch" type="search" placeholder="Buscar indicador, processo ou prática...">
+                <select id="indicatorLevel" aria-label="Filtrar por nível CERNE">
+                  <option value="">Todos os níveis</option>
+                </select>
+                <select id="indicatorAudience" aria-label="Filtrar por público">
+                  <option value="">Todos os públicos</option>
+                </select>
+              </div>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Indicador</th>
+                    <th>Público</th>
+                    <th>Nível</th>
+                    <th>Processo</th>
+                    <th>Prática</th>
+                    <th>Tipo</th>
+                    <th>Periodicidade</th>
+                  </tr>
+                </thead>
+                <tbody id="indicatorRows"></tbody>
+              </table>
+            </div>
+          </article>
         </section>
 
         <section class="view" id="trl">

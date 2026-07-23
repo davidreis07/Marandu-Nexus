@@ -35,8 +35,642 @@ const evidences = [
 ];
 
 const indicators = [
-  ['Receita recorrente', 82, 'Adequado'], ['Clientes ativos', 76, 'Atenção'], ['Evidências validadas', 68, 'Atenção'],
-  ['TRL médio', 71, 'Adequado'], ['Planos no prazo', 59, 'Crítico'], ['Mentorias realizadas', 88, 'Adequado']
+  {
+    "id": "IND001",
+    "publico": "Incubadora",
+    "nivel": "Cerne 1",
+    "processo": "1.1 Sensibilizacao e Prospeccao",
+    "pratica": "1.1.1 Sensibilizacao",
+    "indicador": "Numero de pessoas sensibilizadas",
+    "definicao": "Quantidade de pessoas alcancadas pelas acoes de sensibilizacao.",
+    "tipo": "Contagem",
+    "periodicidade": "Mensal/Trimestral",
+    "fonte": "Manual de Implantacao Cerne 2025, p.20"
+  },
+  {
+    "id": "IND002",
+    "publico": "Incubadora",
+    "nivel": "Cerne 1",
+    "processo": "1.1 Sensibilizacao e Prospeccao",
+    "pratica": "1.1.1 Sensibilizacao",
+    "indicador": "Numero de acoes de sensibilizacao",
+    "definicao": "Quantidade de acoes/eventos/campanhas de sensibilizacao realizadas.",
+    "tipo": "Contagem",
+    "periodicidade": "Mensal/Trimestral",
+    "fonte": "Manual de Implantacao Cerne 2025, p.20"
+  },
+  {
+    "id": "IND003",
+    "publico": "Incubadora",
+    "nivel": "Cerne 1",
+    "processo": "1.1 Sensibilizacao e Prospeccao",
+    "pratica": "1.1.2 Prospeccao",
+    "indicador": "Numero de propostas prospectadas",
+    "definicao": "Quantidade de propostas ou oportunidades identificadas pela prospeccao.",
+    "tipo": "Contagem",
+    "periodicidade": "Mensal/Trimestral",
+    "fonte": "Manual de Implantacao Cerne 2025, p.25"
+  },
+  {
+    "id": "IND004",
+    "publico": "Empresas",
+    "nivel": "Cerne 1",
+    "processo": "1.1 Sensibilizacao e Prospeccao",
+    "pratica": "1.1.3 Qualificacao de Potenciais Empreendedores",
+    "indicador": "Numero de potenciais empreendedores qualificados",
+    "definicao": "Quantidade de potenciais empreendedores qualificados pelo mecanismo.",
+    "tipo": "Contagem",
+    "periodicidade": "Mensal/Trimestral",
+    "fonte": "Manual de Implantacao Cerne 2025, p.30"
+  },
+  {
+    "id": "IND005",
+    "publico": "Incubadora",
+    "nivel": "Cerne 1",
+    "processo": "1.2 Selecao",
+    "pratica": "1.2.1 Recepcao de Propostas",
+    "indicador": "Numero de propostas recebidas por ano",
+    "definicao": "Total de propostas recebidas no ano.",
+    "tipo": "Contagem",
+    "periodicidade": "Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.34"
+  },
+  {
+    "id": "IND006",
+    "publico": "Incubadora",
+    "nivel": "Cerne 1",
+    "processo": "1.2 Selecao",
+    "pratica": "1.2.1 Recepcao de Propostas",
+    "indicador": "Numero de propostas recebidas da propria regiao",
+    "definicao": "Propostas recebidas de empreendedores da regiao do mecanismo.",
+    "tipo": "Contagem",
+    "periodicidade": "Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.34"
+  },
+  {
+    "id": "IND007",
+    "publico": "Incubadora",
+    "nivel": "Cerne 1",
+    "processo": "1.2 Selecao",
+    "pratica": "1.2.1 Recepcao de Propostas",
+    "indicador": "Numero de propostas recebidas de outras regioes",
+    "definicao": "Propostas submetidas por empreendedores de outras regioes.",
+    "tipo": "Contagem",
+    "periodicidade": "Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.34"
+  },
+  {
+    "id": "IND008",
+    "publico": "Empresas",
+    "nivel": "Cerne 1",
+    "processo": "1.2 Selecao",
+    "pratica": "1.2.2 Avaliacao",
+    "indicador": "Percentual de empreendimentos selecionados sobre propostas submetidas",
+    "definicao": "Empreendimentos selecionados dividido pelo total de propostas submetidas.",
+    "tipo": "Percentual",
+    "periodicidade": "Por edital/ciclo",
+    "fonte": "Manual de Implantacao Cerne 2025, p.38"
+  },
+  {
+    "id": "IND009",
+    "publico": "Empresas",
+    "nivel": "Cerne 1",
+    "processo": "1.2 Selecao",
+    "pratica": "1.2.3 Contratacao",
+    "indicador": "Numero de empreendimentos com contratos assinados",
+    "definicao": "Quantidade de empreendimentos formalizados para ingressar no processo de apoio.",
+    "tipo": "Contagem",
+    "periodicidade": "Mensal/Trimestral",
+    "fonte": "Manual de Implantacao Cerne 2025, p.42"
+  },
+  {
+    "id": "IND010",
+    "publico": "Empresas",
+    "nivel": "Cerne 1",
+    "processo": "1.3 Desenvolvimento do Empreendimento",
+    "pratica": "1.3.1 Planejamento",
+    "indicador": "Percentual de empreendimentos com plano de desenvolvimento atualizado",
+    "definicao": "Empreendimentos com plano atualizado, por estagio de crescimento, dividido pelo total de empreendimentos ativos.",
+    "tipo": "Percentual",
+    "periodicidade": "Mensal/Trimestral",
+    "fonte": "Manual de Implantacao Cerne 2025, p.47"
+  },
+  {
+    "id": "IND011",
+    "publico": "Incubadora",
+    "nivel": "Cerne 1",
+    "processo": "1.3 Desenvolvimento do Empreendimento",
+    "pratica": "1.3.2 Agregacao de Valor",
+    "indicador": "Numero de servicos do portfolio realizados",
+    "definicao": "Quantidade de servicos do portfolio executados para empreendimentos.",
+    "tipo": "Contagem",
+    "periodicidade": "Mensal",
+    "fonte": "Manual de Implantacao Cerne 2025, p.51"
+  },
+  {
+    "id": "IND012",
+    "publico": "Empresas",
+    "nivel": "Cerne 1",
+    "processo": "1.3 Desenvolvimento do Empreendimento",
+    "pratica": "1.3.3 Monitoramento",
+    "indicador": "Numero de postos de trabalho gerados pelos empreendimentos apoiados",
+    "definicao": "Total de empregos/postos gerados pelos empreendimentos apoiados.",
+    "tipo": "Contagem",
+    "periodicidade": "Mensal/Trimestral",
+    "fonte": "Manual de Implantacao Cerne 2025, p.57"
+  },
+  {
+    "id": "IND013",
+    "publico": "Empresas",
+    "nivel": "Cerne 1",
+    "processo": "1.3 Desenvolvimento do Empreendimento",
+    "pratica": "1.3.3 Monitoramento",
+    "indicador": "Percentual de empreendimentos que nao concluem o processo de desenvolvimento",
+    "definicao": "Empreendimentos que interrompem ou abandonam o processo dividido pelo total aplicavel.",
+    "tipo": "Percentual",
+    "periodicidade": "Trimestral/Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.57"
+  },
+  {
+    "id": "IND014",
+    "publico": "Empresas",
+    "nivel": "Cerne 1",
+    "processo": "1.3 Desenvolvimento do Empreendimento",
+    "pratica": "1.3.3 Monitoramento",
+    "indicador": "Percentual de empreendimentos com monitoramento atualizado por nivel de maturidade",
+    "definicao": "Empreendimentos com monitoramento atualizado dividido pelo total no mesmo nivel de maturidade.",
+    "tipo": "Percentual",
+    "periodicidade": "Mensal/Trimestral",
+    "fonte": "Manual de Implantacao Cerne 2025, p.57"
+  },
+  {
+    "id": "IND015",
+    "publico": "Empresas",
+    "nivel": "Cerne 1",
+    "processo": "1.3 Desenvolvimento do Empreendimento",
+    "pratica": "1.3.3 Monitoramento",
+    "indicador": "Faturamento total dos empreendimentos apoiados",
+    "definicao": "Somatorio do faturamento dos empreendimentos apoiados.",
+    "tipo": "Moeda",
+    "periodicidade": "Mensal",
+    "fonte": "Manual de Implantacao Cerne 2025, p.57"
+  },
+  {
+    "id": "IND016",
+    "publico": "Empresas",
+    "nivel": "Cerne 1",
+    "processo": "1.3 Desenvolvimento do Empreendimento",
+    "pratica": "1.3.3 Monitoramento",
+    "indicador": "Total de impostos gerados pelos empreendimentos apoiados",
+    "definicao": "Somatorio de impostos gerados/recolhidos pelos empreendimentos apoiados.",
+    "tipo": "Moeda",
+    "periodicidade": "Mensal/Trimestral",
+    "fonte": "Manual de Implantacao Cerne 2025, p.57"
+  },
+  {
+    "id": "IND017",
+    "publico": "Empresas",
+    "nivel": "Cerne 1",
+    "processo": "1.3 Desenvolvimento do Empreendimento",
+    "pratica": "1.3.3 Monitoramento",
+    "indicador": "Captacao de recursos pelos empreendimentos apoiados",
+    "definicao": "Total de recursos captados pelos empreendimentos apoiados.",
+    "tipo": "Moeda",
+    "periodicidade": "Mensal/Trimestral",
+    "fonte": "Manual de Implantacao Cerne 2025, p.57"
+  },
+  {
+    "id": "IND018",
+    "publico": "Empresas graduadas",
+    "nivel": "Cerne 1",
+    "processo": "1.4 Graduacao e Relacionamento com Graduadas",
+    "pratica": "1.4.1 Graduacao",
+    "indicador": "Numero de graduadas",
+    "definicao": "Quantidade de empreendimentos graduados.",
+    "tipo": "Contagem",
+    "periodicidade": "Mensal/Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.64"
+  },
+  {
+    "id": "IND019",
+    "publico": "Empresas graduadas",
+    "nivel": "Cerne 1",
+    "processo": "1.4 Graduacao e Relacionamento com Graduadas",
+    "pratica": "1.4.1 Graduacao",
+    "indicador": "Percentual de graduadas estabelecidas na regiao",
+    "definicao": "Graduadas estabelecidas na regiao dividido pelo total de graduadas.",
+    "tipo": "Percentual",
+    "periodicidade": "Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.64"
+  },
+  {
+    "id": "IND020",
+    "publico": "Empresas graduadas",
+    "nivel": "Cerne 1",
+    "processo": "1.4 Graduacao e Relacionamento com Graduadas",
+    "pratica": "1.4.2 Relacionamento com Graduadas",
+    "indicador": "Percentual de graduadas que permanecem no mercado apos 1 ano",
+    "definicao": "Graduadas ativas apos 1 ano dividido pelo total de graduadas elegiveis.",
+    "tipo": "Percentual",
+    "periodicidade": "Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.68"
+  },
+  {
+    "id": "IND021",
+    "publico": "Empresas graduadas",
+    "nivel": "Cerne 1",
+    "processo": "1.4 Graduacao e Relacionamento com Graduadas",
+    "pratica": "1.4.2 Relacionamento com Graduadas",
+    "indicador": "Percentual de graduadas que permanecem no mercado apos 5 anos",
+    "definicao": "Graduadas ativas apos 5 anos dividido pelo total de graduadas elegiveis.",
+    "tipo": "Percentual",
+    "periodicidade": "Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.68"
+  },
+  {
+    "id": "IND022",
+    "publico": "Empresas graduadas",
+    "nivel": "Cerne 1",
+    "processo": "1.4 Graduacao e Relacionamento com Graduadas",
+    "pratica": "1.4.2 Relacionamento com Graduadas",
+    "indicador": "Numero de postos de trabalho gerados pelas graduadas",
+    "definicao": "Total de empregos/postos gerados pelas empresas graduadas.",
+    "tipo": "Contagem",
+    "periodicidade": "Mensal/Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.68"
+  },
+  {
+    "id": "IND023",
+    "publico": "Empresas graduadas",
+    "nivel": "Cerne 1",
+    "processo": "1.4 Graduacao e Relacionamento com Graduadas",
+    "pratica": "1.4.2 Relacionamento com Graduadas",
+    "indicador": "Faturamento total das graduadas",
+    "definicao": "Somatorio do faturamento das empresas graduadas.",
+    "tipo": "Moeda",
+    "periodicidade": "Mensal/Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.68"
+  },
+  {
+    "id": "IND024",
+    "publico": "Empresas graduadas",
+    "nivel": "Cerne 1",
+    "processo": "1.4 Graduacao e Relacionamento com Graduadas",
+    "pratica": "1.4.2 Relacionamento com Graduadas",
+    "indicador": "Total de impostos gerados pelas graduadas",
+    "definicao": "Somatorio de impostos gerados/recolhidos pelas graduadas.",
+    "tipo": "Moeda",
+    "periodicidade": "Mensal/Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.68"
+  },
+  {
+    "id": "IND025",
+    "publico": "Empresas graduadas",
+    "nivel": "Cerne 1",
+    "processo": "1.4 Graduacao e Relacionamento com Graduadas",
+    "pratica": "1.4.2 Relacionamento com Graduadas",
+    "indicador": "Investimentos recebidos pelas graduadas",
+    "definicao": "Total de investimentos recebidos pelas empresas graduadas.",
+    "tipo": "Moeda",
+    "periodicidade": "Mensal/Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.68"
+  },
+  {
+    "id": "IND026",
+    "publico": "Empresas graduadas",
+    "nivel": "Cerne 1",
+    "processo": "1.4 Graduacao e Relacionamento com Graduadas",
+    "pratica": "1.4.2 Relacionamento com Graduadas",
+    "indicador": "Percentual de graduadas adquiridas por outras empresas",
+    "definicao": "Graduadas adquiridas dividido pelo total de graduadas elegiveis.",
+    "tipo": "Percentual",
+    "periodicidade": "Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.68"
+  },
+  {
+    "id": "IND027",
+    "publico": "Empresas graduadas",
+    "nivel": "Cerne 1",
+    "processo": "1.4 Graduacao e Relacionamento com Graduadas",
+    "pratica": "1.4.2 Relacionamento com Graduadas",
+    "indicador": "Percentual de empresas que realizaram fusao com outras empresas",
+    "definicao": "Empresas graduadas que realizaram fusao dividido pelo total elegivel.",
+    "tipo": "Percentual",
+    "periodicidade": "Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.68"
+  },
+  {
+    "id": "IND028",
+    "publico": "Incubadora",
+    "nivel": "Cerne 1",
+    "processo": "1.4 Graduacao e Relacionamento com Graduadas",
+    "pratica": "1.4.2 Relacionamento com Graduadas",
+    "indicador": "Numero de empreendedores que apoiam as acoes do mecanismo de inovacao",
+    "definicao": "Quantidade de empreendedores graduados/relacionados que apoiam acoes do mecanismo.",
+    "tipo": "Contagem",
+    "periodicidade": "Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.68"
+  },
+  {
+    "id": "IND029",
+    "publico": "Incubadora",
+    "nivel": "Cerne 1",
+    "processo": "1.5 Gerenciamento Basico",
+    "pratica": "1.5.1 Estrutura Organizacional",
+    "indicador": "Numero de parceiros regionais, nacionais e internacionais",
+    "definicao": "Quantidade de parceiros ativos por abrangencia.",
+    "tipo": "Contagem",
+    "periodicidade": "Trimestral/Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.73"
+  },
+  {
+    "id": "IND030",
+    "publico": "Incubadora",
+    "nivel": "Cerne 1",
+    "processo": "1.5 Gerenciamento Basico",
+    "pratica": "1.5.1 Estrutura Organizacional",
+    "indicador": "Numero de eventos organizados ou coorganizados",
+    "definicao": "Eventos organizados pelo mecanismo ou com participacao na equipe organizadora.",
+    "tipo": "Contagem",
+    "periodicidade": "Mensal/Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.73"
+  },
+  {
+    "id": "IND031",
+    "publico": "Incubadora",
+    "nivel": "Cerne 1",
+    "processo": "1.5 Gerenciamento Basico",
+    "pratica": "1.5.2 Gestao do Mecanismo de Inovacao",
+    "indicador": "Total de receita gerada pelo mecanismo de inovacao",
+    "definicao": "Receita economica e financeira gerada pelo mecanismo.",
+    "tipo": "Moeda",
+    "periodicidade": "Mensal/Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.76-77"
+  },
+  {
+    "id": "IND032",
+    "publico": "Incubadora",
+    "nivel": "Cerne 1",
+    "processo": "1.5 Gerenciamento Basico",
+    "pratica": "1.5.2 Gestao do Mecanismo de Inovacao",
+    "indicador": "Quantidade de recursos captados pelo mecanismo de inovacao",
+    "definicao": "Recursos captados junto a instituicoes publicas e privadas.",
+    "tipo": "Moeda",
+    "periodicidade": "Mensal/Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.76-77"
+  },
+  {
+    "id": "IND033",
+    "publico": "Incubadora",
+    "nivel": "Cerne 1",
+    "processo": "1.5 Gerenciamento Basico",
+    "pratica": "1.5.3 Comunicacao e Marketing",
+    "indicador": "Numero de pessoas alcancadas pelas acoes de marketing",
+    "definicao": "Pessoas alcancadas por campanhas, conteudos e canais de comunicacao.",
+    "tipo": "Contagem",
+    "periodicidade": "Mensal",
+    "fonte": "Manual de Implantacao Cerne 2025, p.80-81"
+  },
+  {
+    "id": "IND034",
+    "publico": "Incubadora",
+    "nivel": "Cerne 2",
+    "processo": "2.1 Gestao Estrategica",
+    "pratica": "2.1.1 Planejamento Estrategico",
+    "indicador": "Percentual de membros da governanca e parceiros que participaram do planejamento estrategico",
+    "definicao": "Participantes da governanca e parceiros envolvidos dividido pelo total esperado.",
+    "tipo": "Percentual",
+    "periodicidade": "Por ciclo de planejamento",
+    "fonte": "Manual de Implantacao Cerne 2025, p.85-86"
+  },
+  {
+    "id": "IND035",
+    "publico": "Incubadora",
+    "nivel": "Cerne 2",
+    "processo": "2.1 Gestao Estrategica",
+    "pratica": "2.1.2 Administracao Estrategica",
+    "indicador": "Percentual das acoes previstas no planejamento estrategico realizadas com exito",
+    "definicao": "Acoes concluidas com exito dividido pelo total previsto.",
+    "tipo": "Percentual",
+    "periodicidade": "Mensal/Trimestral",
+    "fonte": "Manual de Implantacao Cerne 2025, p.88-89"
+  },
+  {
+    "id": "IND036",
+    "publico": "Incubadora",
+    "nivel": "Cerne 2",
+    "processo": "2.2 Ampliacao de Limites",
+    "pratica": "2.2.1 Estimulo a Ideacao",
+    "indicador": "Numero de ambientes de ideacao em parceria com o mecanismo",
+    "definicao": "Ambientes de ideacao que atuam em parceria com o mecanismo.",
+    "tipo": "Contagem",
+    "periodicidade": "Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.92"
+  },
+  {
+    "id": "IND037",
+    "publico": "Incubadora",
+    "nivel": "Cerne 2",
+    "processo": "2.2 Ampliacao de Limites",
+    "pratica": "2.2.2 Servicos a Organizacoes",
+    "indicador": "Receita total com servicos executados para organizacoes publicas e privadas",
+    "definicao": "Receita financeira ou economica obtida com servicos para organizacoes.",
+    "tipo": "Moeda",
+    "periodicidade": "Mensal/Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.95"
+  },
+  {
+    "id": "IND038",
+    "publico": "Empresas",
+    "nivel": "Cerne 2",
+    "processo": "2.3 Avaliacao do Mecanismo de Inovacao",
+    "pratica": "2.3.1 Avaliacao da Qualidade",
+    "indicador": "Numero de premios de inovacao recebidos pelos empreendimentos apoiados e/ou graduados",
+    "definicao": "Premios associados a inovacao recebidos por apoiadas e graduadas.",
+    "tipo": "Contagem",
+    "periodicidade": "Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.99-100"
+  },
+  {
+    "id": "IND039",
+    "publico": "Empresas",
+    "nivel": "Cerne 2",
+    "processo": "2.3 Avaliacao do Mecanismo de Inovacao",
+    "pratica": "2.3.1 Avaliacao da Qualidade",
+    "indicador": "Numero de empreendimentos contemplados por editais de inovacao",
+    "definicao": "Empreendimentos apoiados e/ou graduados contemplados em editais de inovacao.",
+    "tipo": "Contagem",
+    "periodicidade": "Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.99-100"
+  },
+  {
+    "id": "IND040",
+    "publico": "Empresas",
+    "nivel": "Cerne 2",
+    "processo": "2.3 Avaliacao do Mecanismo de Inovacao",
+    "pratica": "2.3.1 Avaliacao da Qualidade",
+    "indicador": "Numero de empreendimentos que receberam aporte de capital",
+    "definicao": "Empreendimentos apoiados e/ou graduados que receberam aporte.",
+    "tipo": "Contagem",
+    "periodicidade": "Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.99-100"
+  },
+  {
+    "id": "IND041",
+    "publico": "Incubadora",
+    "nivel": "Cerne 2",
+    "processo": "2.3 Avaliacao do Mecanismo de Inovacao",
+    "pratica": "2.3.2 Avaliacao dos Impactos",
+    "indicador": "Numero de pessoas com acesso ao relatorio de impactos",
+    "definicao": "Pessoas que tiveram acesso ao relatorio de impactos do mecanismo na regiao.",
+    "tipo": "Contagem",
+    "periodicidade": "Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.103"
+  },
+  {
+    "id": "IND042",
+    "publico": "Incubadora",
+    "nivel": "Cerne 3",
+    "processo": "3.1 Relacionamento Institucional",
+    "pratica": "3.1.1 Interacao com o Entorno",
+    "indicador": "Numero de projetos executados em parceria com atores do ecossistema regional",
+    "definicao": "Projetos realizados em parceria com atores do ecossistema de inovacao da regiao.",
+    "tipo": "Contagem",
+    "periodicidade": "Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.109"
+  },
+  {
+    "id": "IND043",
+    "publico": "Incubadora",
+    "nivel": "Cerne 3",
+    "processo": "3.1 Relacionamento Institucional",
+    "pratica": "3.1.2 Participacao na Proposicao de Politicas Publicas",
+    "indicador": "Numero de foruns dos quais o mecanismo participa",
+    "definicao": "Foruns de politica publica/ecossistema com participacao do mecanismo.",
+    "tipo": "Contagem",
+    "periodicidade": "Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.113"
+  },
+  {
+    "id": "IND044",
+    "publico": "Incubadora",
+    "nivel": "Cerne 3",
+    "processo": "3.1 Relacionamento Institucional",
+    "pratica": "3.1.2 Participacao na Proposicao de Politicas Publicas",
+    "indicador": "Numero de proposicoes apresentadas nos foruns",
+    "definicao": "Proposicoes apresentadas pelo mecanismo nos foruns em que participa.",
+    "tipo": "Contagem",
+    "periodicidade": "Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.113"
+  },
+  {
+    "id": "IND045",
+    "publico": "Empresas",
+    "nivel": "Cerne 3",
+    "processo": "3.2 Desenvolvimento em Rede",
+    "pratica": "3.2.1 Rede de Apoio aos Empreendimentos",
+    "indicador": "Percentual de empresas que possuem um profissional apoiador",
+    "definicao": "Empresas com profissional apoiador dividido pelo total de empresas apoiadas aplicavel.",
+    "tipo": "Percentual",
+    "periodicidade": "Trimestral/Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.117-118"
+  },
+  {
+    "id": "IND046",
+    "publico": "Incubadora",
+    "nivel": "Cerne 3",
+    "processo": "3.2 Desenvolvimento em Rede",
+    "pratica": "3.2.1 Rede de Apoio aos Empreendimentos",
+    "indicador": "Numero de profissionais e instituicoes apoiadores no banco de parceiros",
+    "definicao": "Profissionais e instituicoes apoiadores cadastrados no banco de parceiros.",
+    "tipo": "Contagem",
+    "periodicidade": "Trimestral/Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.117-118"
+  },
+  {
+    "id": "IND047",
+    "publico": "Incubadora",
+    "nivel": "Cerne 3",
+    "processo": "3.2 Desenvolvimento em Rede",
+    "pratica": "3.2.2 Gestao de Ofertas e Demandas",
+    "indicador": "Numero de projetos de conexao entre oferta e demanda realizados",
+    "definicao": "Projetos executados para conectar ofertas e demandas.",
+    "tipo": "Contagem",
+    "periodicidade": "Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.121"
+  },
+  {
+    "id": "IND048",
+    "publico": "Empresas",
+    "nivel": "Cerne 3",
+    "processo": "3.2 Desenvolvimento em Rede",
+    "pratica": "3.2.2 Gestao de Ofertas e Demandas",
+    "indicador": "Numero de empreendimentos apoiados e graduados participantes de projetos de conexao",
+    "definicao": "Empreendimentos apoiados e graduados que participaram de projetos de conexao oferta-demanda.",
+    "tipo": "Contagem",
+    "periodicidade": "Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.121"
+  },
+  {
+    "id": "IND049",
+    "publico": "Empresas",
+    "nivel": "Cerne 3",
+    "processo": "3.2 Desenvolvimento em Rede",
+    "pratica": "3.2.3 Expansao da Atuacao Territorial",
+    "indicador": "Numero de empreendimentos apoiados instalados fora da regiao do mecanismo",
+    "definicao": "Empreendimentos apoiados localizados fora da regiao do mecanismo.",
+    "tipo": "Contagem",
+    "periodicidade": "Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.124"
+  },
+  {
+    "id": "IND050",
+    "publico": "Ambos",
+    "nivel": "Cerne 3",
+    "processo": "3.3 Responsabilidade Social e Ambiental",
+    "pratica": "3.3.1 Gestao Ambiental",
+    "indicador": "Numero de acoes de gestao ambiental operacionalizadas",
+    "definicao": "Acoes de gestao ambiental realizadas pelo mecanismo, incluindo atuacao junto a empresas apoiadas.",
+    "tipo": "Contagem",
+    "periodicidade": "Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.127"
+  },
+  {
+    "id": "IND051",
+    "publico": "Ambos",
+    "nivel": "Cerne 3",
+    "processo": "3.3 Responsabilidade Social e Ambiental",
+    "pratica": "3.3.2 Responsabilidade Social",
+    "indicador": "Numero de acoes de responsabilidade social operacionalizadas",
+    "definicao": "Acoes de responsabilidade social realizadas pelo mecanismo e/ou com empreendimentos apoiados.",
+    "tipo": "Contagem",
+    "periodicidade": "Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.130"
+  },
+  {
+    "id": "IND052",
+    "publico": "Incubadora",
+    "nivel": "Cerne 4",
+    "processo": "4.1 Atuacao Internacional",
+    "pratica": "4.1.1 Internacionalizacao do Mecanismo de Inovacao",
+    "indicador": "Numero de projetos executados com parceiros internacionais",
+    "definicao": "Projetos internacionais executados com parceiros do mecanismo.",
+    "tipo": "Contagem",
+    "periodicidade": "Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.135"
+  },
+  {
+    "id": "IND053",
+    "publico": "Empresas",
+    "nivel": "Cerne 4",
+    "processo": "4.1 Atuacao Internacional",
+    "pratica": "4.1.2 Internacionalizacao dos Empreendimentos",
+    "indicador": "Numero de empreendimentos participando de projetos de internacionalizacao",
+    "definicao": "Empreendimentos apoiados e graduados participantes de projetos de internacionalizacao.",
+    "tipo": "Contagem",
+    "periodicidade": "Anual",
+    "fonte": "Manual de Implantacao Cerne 2025, p.138-139"
+  }
 ];
 
 const docs = ['Plano financeiro', 'Plano estratégico', 'Roadmap', 'Pitch', 'Contrato', 'NDA', 'Relatórios'];
@@ -229,8 +863,50 @@ function openCompany(id) {
 }
 
 function renderIndicators() {
-  document.getElementById('indicatorCards').innerHTML = indicators.map(([name, pct, status]) => `
-    <article class="indicator-card"><div class="panel-title"><h2>${name}</h2><span class="badge ${statusClass(status)}">${status}</span></div><div class="progress"><i style="width:${pct}%"></i></div><p>${pct}% da meta acompanhada no ciclo atual.</p></article>
+  const levelFilter = document.getElementById('indicatorLevel');
+  const audienceFilter = document.getElementById('indicatorAudience');
+  const searchInput = document.getElementById('indicatorSearch');
+  const levels = [...new Set(indicators.map((item) => item.nivel))];
+  const audiences = [...new Set(indicators.map((item) => item.publico))];
+
+  if (levelFilter && levelFilter.options.length === 1) {
+    levelFilter.insertAdjacentHTML('beforeend', levels.map((level) => `<option>${level}</option>`).join(''));
+  }
+  if (audienceFilter && audienceFilter.options.length === 1) {
+    audienceFilter.insertAdjacentHTML('beforeend', audiences.map((audience) => `<option>${audience}</option>`).join(''));
+  }
+
+  const byLevel = levels.map((level) => [level, indicators.filter((item) => item.nivel === level).length]);
+  const companyIndicators = indicators.filter((item) => ['Empresas', 'Empresas graduadas', 'Ambos'].includes(item.publico)).length;
+  const incubatorIndicators = indicators.filter((item) => ['Incubadora', 'Ambos'].includes(item.publico)).length;
+  document.getElementById('indicatorCards').innerHTML = [
+    ['Total CERNE', indicators.length, 'Indicadores do catálogo'],
+    ['Incubadora', incubatorIndicators, 'Gestão institucional'],
+    ['Empresas', companyIndicators, 'Acompanhamento da carteira'],
+    ...byLevel
+  ].map(([name, value, hint]) => `
+    <article class="indicator-card"><div class="panel-title"><h2>${name}</h2><span class="badge orange">${value}</span></div><p>${hint || 'Indicadores vinculados a este nível CERNE.'}</p></article>
+  `).join('');
+
+  const query = (searchInput?.value || '').toLowerCase();
+  const level = levelFilter?.value || '';
+  const audience = audienceFilter?.value || '';
+  const filtered = indicators.filter((item) => {
+    const haystack = [item.id, item.indicador, item.publico, item.nivel, item.processo, item.pratica, item.tipo, item.periodicidade].join(' ').toLowerCase();
+    return (!query || haystack.includes(query)) && (!level || item.nivel === level) && (!audience || item.publico === audience);
+  });
+
+  document.getElementById('indicatorRows').innerHTML = filtered.map((item) => `
+    <tr>
+      <td><b>${item.id}</b></td>
+      <td><b>${item.indicador}</b><br><small>${item.definicao}</small></td>
+      <td><span class="badge gray">${item.publico}</span></td>
+      <td><span class="badge orange">${item.nivel}</span></td>
+      <td>${item.processo}</td>
+      <td>${item.pratica}</td>
+      <td>${item.tipo}</td>
+      <td>${item.periodicidade}</td>
+    </tr>
   `).join('');
 }
 
@@ -316,6 +992,9 @@ document.addEventListener('click', (event) => {
 
 document.getElementById('mobileMenu').addEventListener('click', () => document.querySelector('.sidebar').classList.toggle('open'));
 document.getElementById('companyFilter').addEventListener('change', renderCompanies);
+document.getElementById('indicatorSearch')?.addEventListener('input', renderIndicators);
+document.getElementById('indicatorLevel')?.addEventListener('change', renderIndicators);
+document.getElementById('indicatorAudience')?.addEventListener('change', renderIndicators);
 document.getElementById('newCompany').addEventListener('click', () => toast('Cadastro de empresa simulado'));
 document.getElementById('globalSearch').addEventListener('input', (event) => {
   const value = event.target.value.toLowerCase();
