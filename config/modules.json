@@ -1,0 +1,29 @@
+{
+  "modulos": {
+    "visao": true,
+    "sitemap": true,
+    "dashboard": true,
+    "operacional": true,
+    "empresas": true,
+    "acompanhamento": true,
+    "diagnostico": true,
+    "indicadores": true,
+    "trl": true,
+    "evidencias": true,
+    "documentos": true,
+    "planos": true,
+    "mentorias": true,
+    "relatorios": true,
+    "powerbi": true,
+    "auditoria": true,
+    "configuracoes": true,
+    "roadmap": true,
+    "usuarios": false,
+    "eventos": false,
+    "consultorias": false,
+    "propriedadeIntelectual": false,
+    "editais": false,
+    "financeiro": false,
+    "notificacoes": true
+  }
+}

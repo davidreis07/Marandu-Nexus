@@ -1,0 +1,29 @@
+{
+  "nomeSistema": "Marandu Nexus",
+  "versao": "0.3.0",
+  "metodologiaPadrao": "CERNE",
+  "idioma": "pt-BR",
+  "empresaPadrao": "Incubadora Marandu",
+  "tema": {
+    "nome": "marandu-light",
+    "corPrimaria": "#f97316",
+    "corTexto": "#1f2937",
+    "corFundo": "#f8fafc",
+    "corSucesso": "#16a34a",
+    "corAlerta": "#f59e0b",
+    "corErro": "#dc2626"
+  },
+  "metodologias": ["CERNE", "TRL"],
+  "recursosFuturos": {
+    "multiIncubadora": true,
+    "autenticacao": true,
+    "permissoes": true,
+    "apiRest": true,
+    "postgresql": true,
+    "inteligenciaArtificial": true,
+    "exportacaoPdf": true,
+    "exportacaoExcel": true,
+    "nuvem": true,
+    "mobile": true
+  }
+}

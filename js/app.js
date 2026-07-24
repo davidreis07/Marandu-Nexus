@@ -1,9 +1,11 @@
 import { icon } from "./components/icons.js";
 import { createBusinessEngine } from "./core/business-engine.js";
+import { createPlatformCore } from "./core/platform-core.js";
 import { DataService } from "./services/dataService.js";
 import { EmpresaService } from "./services/empresa-service.js";
 import { EvidenciaService } from "./services/evidencia-service.js";
 import { IndicadorService } from "./services/indicador-service.js";
+import { nativeModules } from "../modules/registry.js";
 
 let state = {
   empresas: [],
@@ -13,6 +15,7 @@ let state = {
   configuracoes: {},
 };
 let businessEngine;
+let platformCore;
 
 const siteMap = [
   ["Visão e gestão", "dashboard", ["Dashboard Executivo", "Dashboard Operacional", "Alertas institucionais", "Prioridades da diretoria"]],
@@ -50,18 +53,26 @@ function mountIcons() {
   });
 }
 
+function renderMenu() {
+  const menu = document.getElementById("menu");
+  const currentView = platformCore?.router.current() || "visao";
+  menu.innerHTML = platformCore.getActiveModules().map((moduleDefinition) => `
+    <button class="${moduleDefinition.id === currentView ? "active" : ""}" data-view="${moduleDefinition.id}" type="button">
+      <span data-icon="${moduleDefinition.icon}"></span>${moduleDefinition.label}
+    </button>
+  `).join("");
+}
+
 function setView(view) {
-  document.querySelectorAll(".view").forEach((el) => el.classList.toggle("active", el.id === view));
-  document.querySelectorAll(".menu button").forEach((btn) => btn.classList.toggle("active", btn.dataset.view === view));
+  const route = platformCore?.navigate(view) || view;
+  document.querySelectorAll(".view").forEach((el) => el.classList.toggle("active", el.id === route));
+  document.querySelectorAll(".menu button").forEach((btn) => btn.classList.toggle("active", btn.dataset.view === route));
   document.querySelector(".sidebar").classList.remove("open");
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function toast(text) {
-  const el = document.getElementById("toast");
-  el.textContent = text;
-  el.classList.add("show");
-  setTimeout(() => el.classList.remove("show"), 1800);
+  platformCore?.notify(text);
 }
 
 function renderDashboard() {
@@ -316,6 +327,7 @@ function bindEvents() {
 }
 
 function renderAll() {
+  renderMenu();
   mountIcons();
   renderDashboard();
   renderSiteMap();
@@ -335,6 +347,7 @@ function renderAll() {
 
 async function init() {
   try {
+    platformCore = await createPlatformCore({ modules: nativeModules });
     state = await DataService.loadAll();
     businessEngine = createBusinessEngine(state);
     businessEngine.on("state:changed", (snapshot) => {
