@@ -1,0 +1,2090 @@
+[
+  {
+    "id": 1,
+    "nome": "Oliveira ProDev",
+    "descricao": "Oliveira ProDev é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2024",
+    "trilha": "Validação",
+    "area": "Bioeconomia",
+    "trl": 1,
+    "proximoTrl": 2,
+    "score": 42,
+    "farol": "Vermelho",
+    "prontaEvolucao": false,
+    "responsavel": "Ana Ribeiro",
+    "ultimaAtualizacao": "2026-07-01",
+    "indicadores": [
+      "IND001",
+      "IND002",
+      "IND003",
+      "IND004",
+      "IND005"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nome": "Aeromod",
+    "descricao": "Aeromod é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2025",
+    "trilha": "Tração",
+    "area": "Agrotech",
+    "trl": 2,
+    "proximoTrl": 3,
+    "score": 49,
+    "farol": "Vermelho",
+    "prontaEvolucao": false,
+    "responsavel": "Carlos Lima",
+    "ultimaAtualizacao": "2026-07-02",
+    "indicadores": [
+      "IND002",
+      "IND003",
+      "IND004",
+      "IND005",
+      "IND006"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nome": "Apiméli Company",
+    "descricao": "Apiméli Company é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Pré-incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2026",
+    "trilha": "Mercado",
+    "area": "Healthtech",
+    "trl": 3,
+    "proximoTrl": 4,
+    "score": 56,
+    "farol": "Amarelo",
+    "prontaEvolucao": false,
+    "responsavel": "Lia Castro",
+    "ultimaAtualizacao": "2026-07-03",
+    "indicadores": [
+      "IND003",
+      "IND004",
+      "IND005",
+      "IND006",
+      "IND007"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "nome": "Babaçufil",
+    "descricao": "Babaçufil é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Graduada",
+    "tipo": "Graduada",
+    "ciclo": "Ciclo 2024",
+    "trilha": "Tecnologia",
+    "area": "Edtech",
+    "trl": 4,
+    "proximoTrl": 5,
+    "score": 63,
+    "farol": "Amarelo",
+    "prontaEvolucao": false,
+    "responsavel": "Marcos Paiva",
+    "ultimaAtualizacao": "2026-07-04",
+    "indicadores": [
+      "IND004",
+      "IND005",
+      "IND006",
+      "IND007",
+      "IND008"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "nome": "BabaçuTech",
+    "descricao": "BabaçuTech é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Ativa",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2025",
+    "trilha": "Impacto",
+    "area": "Govtech",
+    "trl": 5,
+    "proximoTrl": 6,
+    "score": 70,
+    "farol": "Amarelo",
+    "prontaEvolucao": false,
+    "responsavel": "Patrícia Neves",
+    "ultimaAtualizacao": "2026-07-05",
+    "indicadores": [
+      "IND005",
+      "IND006",
+      "IND007",
+      "IND008",
+      "IND009"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "nome": "Bico.com",
+    "descricao": "Bico.com é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2026",
+    "trilha": "Validação",
+    "area": "Energia",
+    "trl": 6,
+    "proximoTrl": 7,
+    "score": 77,
+    "farol": "Amarelo",
+    "prontaEvolucao": false,
+    "responsavel": "João Mendes",
+    "ultimaAtualizacao": "2026-07-06",
+    "indicadores": [
+      "IND006",
+      "IND007",
+      "IND008",
+      "IND009",
+      "IND010"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "nome": "Bijutech Alimentos",
+    "descricao": "Bijutech Alimentos é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2024",
+    "trilha": "Tração",
+    "area": "Indústria Criativa",
+    "trl": 7,
+    "proximoTrl": 8,
+    "score": 84,
+    "farol": "Verde",
+    "prontaEvolucao": true,
+    "responsavel": "Equipe Marandu",
+    "ultimaAtualizacao": "2026-07-07",
+    "indicadores": [
+      "IND007",
+      "IND008",
+      "IND009",
+      "IND010",
+      "IND011"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "nome": "Biofábrica de Insetos",
+    "descricao": "Biofábrica de Insetos é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Pré-incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2025",
+    "trilha": "Mercado",
+    "area": "Sustentabilidade",
+    "trl": 8,
+    "proximoTrl": 9,
+    "score": 91,
+    "farol": "Verde",
+    "prontaEvolucao": true,
+    "responsavel": "Ana Ribeiro",
+    "ultimaAtualizacao": "2026-07-08",
+    "indicadores": [
+      "IND008",
+      "IND009",
+      "IND010",
+      "IND011",
+      "IND012"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "nome": "Bluerisk Analytics",
+    "descricao": "Bluerisk Analytics é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Graduada",
+    "tipo": "Graduada",
+    "ciclo": "Ciclo 2026",
+    "trilha": "Tecnologia",
+    "area": "Bioeconomia",
+    "trl": 9,
+    "proximoTrl": 9,
+    "score": 98,
+    "farol": "Verde",
+    "prontaEvolucao": false,
+    "responsavel": "Carlos Lima",
+    "ultimaAtualizacao": "2026-07-09",
+    "indicadores": [
+      "IND009",
+      "IND010",
+      "IND011",
+      "IND012",
+      "IND013"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "nome": "Capiboss",
+    "descricao": "Capiboss é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Ativa",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2024",
+    "trilha": "Impacto",
+    "area": "Agrotech",
+    "trl": 1,
+    "proximoTrl": 2,
+    "score": 48,
+    "farol": "Vermelho",
+    "prontaEvolucao": false,
+    "responsavel": "Lia Castro",
+    "ultimaAtualizacao": "2026-07-10",
+    "indicadores": [
+      "IND010",
+      "IND011",
+      "IND012",
+      "IND013",
+      "IND014"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "nome": "Chokmah Tovah Insight",
+    "descricao": "Chokmah Tovah Insight é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2025",
+    "trilha": "Validação",
+    "area": "Healthtech",
+    "trl": 2,
+    "proximoTrl": 3,
+    "score": 55,
+    "farol": "Amarelo",
+    "prontaEvolucao": false,
+    "responsavel": "Marcos Paiva",
+    "ultimaAtualizacao": "2026-07-11",
+    "indicadores": [
+      "IND001",
+      "IND002",
+      "IND003",
+      "IND004",
+      "IND005"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "nome": "Conecta Campo",
+    "descricao": "Conecta Campo é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2026",
+    "trilha": "Tração",
+    "area": "Edtech",
+    "trl": 3,
+    "proximoTrl": 4,
+    "score": 62,
+    "farol": "Amarelo",
+    "prontaEvolucao": false,
+    "responsavel": "Patrícia Neves",
+    "ultimaAtualizacao": "2026-07-12",
+    "indicadores": [
+      "IND002",
+      "IND003",
+      "IND004",
+      "IND005",
+      "IND006"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "nome": "ContentHub",
+    "descricao": "ContentHub é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Pré-incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2024",
+    "trilha": "Mercado",
+    "area": "Govtech",
+    "trl": 4,
+    "proximoTrl": 5,
+    "score": 69,
+    "farol": "Amarelo",
+    "prontaEvolucao": false,
+    "responsavel": "João Mendes",
+    "ultimaAtualizacao": "2026-07-13",
+    "indicadores": [
+      "IND003",
+      "IND004",
+      "IND005",
+      "IND006",
+      "IND007"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "nome": "Cunhã",
+    "descricao": "Cunhã é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Graduada",
+    "tipo": "Graduada",
+    "ciclo": "Ciclo 2025",
+    "trilha": "Tecnologia",
+    "area": "Energia",
+    "trl": 5,
+    "proximoTrl": 6,
+    "score": 76,
+    "farol": "Amarelo",
+    "prontaEvolucao": false,
+    "responsavel": "Equipe Marandu",
+    "ultimaAtualizacao": "2026-07-14",
+    "indicadores": [
+      "IND004",
+      "IND005",
+      "IND006",
+      "IND007",
+      "IND008"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "nome": "EcoMod",
+    "descricao": "EcoMod é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Ativa",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2026",
+    "trilha": "Impacto",
+    "area": "Indústria Criativa",
+    "trl": 6,
+    "proximoTrl": 7,
+    "score": 83,
+    "farol": "Verde",
+    "prontaEvolucao": true,
+    "responsavel": "Ana Ribeiro",
+    "ultimaAtualizacao": "2026-07-15",
+    "indicadores": [
+      "IND005",
+      "IND006",
+      "IND007",
+      "IND008",
+      "IND009"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "nome": "Ecopapel Smart",
+    "descricao": "Ecopapel Smart é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2024",
+    "trilha": "Validação",
+    "area": "Sustentabilidade",
+    "trl": 7,
+    "proximoTrl": 8,
+    "score": 90,
+    "farol": "Verde",
+    "prontaEvolucao": true,
+    "responsavel": "Carlos Lima",
+    "ultimaAtualizacao": "2026-07-16",
+    "indicadores": [
+      "IND006",
+      "IND007",
+      "IND008",
+      "IND009",
+      "IND010"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "nome": "Elo Agroflorestal",
+    "descricao": "Elo Agroflorestal é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2025",
+    "trilha": "Tração",
+    "area": "Bioeconomia",
+    "trl": 8,
+    "proximoTrl": 9,
+    "score": 97,
+    "farol": "Verde",
+    "prontaEvolucao": true,
+    "responsavel": "Lia Castro",
+    "ultimaAtualizacao": "2026-07-17",
+    "indicadores": [
+      "IND007",
+      "IND008",
+      "IND009",
+      "IND010",
+      "IND011"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "nome": "Facto",
+    "descricao": "Facto é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Pré-incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2026",
+    "trilha": "Mercado",
+    "area": "Agrotech",
+    "trl": 9,
+    "proximoTrl": 9,
+    "score": 47,
+    "farol": "Vermelho",
+    "prontaEvolucao": false,
+    "responsavel": "Marcos Paiva",
+    "ultimaAtualizacao": "2026-07-18",
+    "indicadores": [
+      "IND008",
+      "IND009",
+      "IND010",
+      "IND011",
+      "IND012"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "nome": "Flow",
+    "descricao": "Flow é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Graduada",
+    "tipo": "Graduada",
+    "ciclo": "Ciclo 2024",
+    "trilha": "Tecnologia",
+    "area": "Healthtech",
+    "trl": 1,
+    "proximoTrl": 2,
+    "score": 54,
+    "farol": "Vermelho",
+    "prontaEvolucao": false,
+    "responsavel": "Patrícia Neves",
+    "ultimaAtualizacao": "2026-07-19",
+    "indicadores": [
+      "IND009",
+      "IND010",
+      "IND011",
+      "IND012",
+      "IND013"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "nome": "Forja",
+    "descricao": "Forja é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Ativa",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2025",
+    "trilha": "Impacto",
+    "area": "Edtech",
+    "trl": 2,
+    "proximoTrl": 3,
+    "score": 61,
+    "farol": "Amarelo",
+    "prontaEvolucao": false,
+    "responsavel": "João Mendes",
+    "ultimaAtualizacao": "2026-07-20",
+    "indicadores": [
+      "IND010",
+      "IND011",
+      "IND012",
+      "IND013",
+      "IND014"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "nome": "GetiCompany",
+    "descricao": "GetiCompany é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2026",
+    "trilha": "Validação",
+    "area": "Govtech",
+    "trl": 3,
+    "proximoTrl": 4,
+    "score": 68,
+    "farol": "Amarelo",
+    "prontaEvolucao": false,
+    "responsavel": "Equipe Marandu",
+    "ultimaAtualizacao": "2026-07-21",
+    "indicadores": [
+      "IND001",
+      "IND002",
+      "IND003",
+      "IND004",
+      "IND005"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "nome": "Gitali",
+    "descricao": "Gitali é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2024",
+    "trilha": "Tração",
+    "area": "Energia",
+    "trl": 4,
+    "proximoTrl": 5,
+    "score": 75,
+    "farol": "Amarelo",
+    "prontaEvolucao": false,
+    "responsavel": "Ana Ribeiro",
+    "ultimaAtualizacao": "2026-07-22",
+    "indicadores": [
+      "IND002",
+      "IND003",
+      "IND004",
+      "IND005",
+      "IND006"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "nome": "Globaliza MA",
+    "descricao": "Globaliza MA é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Pré-incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2025",
+    "trilha": "Mercado",
+    "area": "Indústria Criativa",
+    "trl": 5,
+    "proximoTrl": 6,
+    "score": 82,
+    "farol": "Verde",
+    "prontaEvolucao": true,
+    "responsavel": "Carlos Lima",
+    "ultimaAtualizacao": "2026-07-01",
+    "indicadores": [
+      "IND003",
+      "IND004",
+      "IND005",
+      "IND006",
+      "IND007"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "nome": "I-EDUCAM",
+    "descricao": "I-EDUCAM é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Graduada",
+    "tipo": "Graduada",
+    "ciclo": "Ciclo 2026",
+    "trilha": "Tecnologia",
+    "area": "Sustentabilidade",
+    "trl": 6,
+    "proximoTrl": 7,
+    "score": 89,
+    "farol": "Verde",
+    "prontaEvolucao": true,
+    "responsavel": "Lia Castro",
+    "ultimaAtualizacao": "2026-07-02",
+    "indicadores": [
+      "IND004",
+      "IND005",
+      "IND006",
+      "IND007",
+      "IND008"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "nome": "Indelével - BioFil",
+    "descricao": "Indelével - BioFil é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Ativa",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2024",
+    "trilha": "Impacto",
+    "area": "Bioeconomia",
+    "trl": 7,
+    "proximoTrl": 8,
+    "score": 96,
+    "farol": "Verde",
+    "prontaEvolucao": true,
+    "responsavel": "Marcos Paiva",
+    "ultimaAtualizacao": "2026-07-03",
+    "indicadores": [
+      "IND005",
+      "IND006",
+      "IND007",
+      "IND008",
+      "IND009"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "nome": "Kolmear",
+    "descricao": "Kolmear é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2025",
+    "trilha": "Validação",
+    "area": "Agrotech",
+    "trl": 8,
+    "proximoTrl": 9,
+    "score": 46,
+    "farol": "Vermelho",
+    "prontaEvolucao": false,
+    "responsavel": "Patrícia Neves",
+    "ultimaAtualizacao": "2026-07-04",
+    "indicadores": [
+      "IND006",
+      "IND007",
+      "IND008",
+      "IND009",
+      "IND010"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "nome": "Logup Mobility Intelligence",
+    "descricao": "Logup Mobility Intelligence é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2026",
+    "trilha": "Tração",
+    "area": "Healthtech",
+    "trl": 9,
+    "proximoTrl": 9,
+    "score": 53,
+    "farol": "Vermelho",
+    "prontaEvolucao": false,
+    "responsavel": "João Mendes",
+    "ultimaAtualizacao": "2026-07-05",
+    "indicadores": [
+      "IND007",
+      "IND008",
+      "IND009",
+      "IND010",
+      "IND011"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "nome": "Lumê - Inteligência",
+    "descricao": "Lumê - Inteligência é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Pré-incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2024",
+    "trilha": "Mercado",
+    "area": "Edtech",
+    "trl": 1,
+    "proximoTrl": 2,
+    "score": 60,
+    "farol": "Amarelo",
+    "prontaEvolucao": false,
+    "responsavel": "Equipe Marandu",
+    "ultimaAtualizacao": "2026-07-06",
+    "indicadores": [
+      "IND008",
+      "IND009",
+      "IND010",
+      "IND011",
+      "IND012"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "nome": "Lumina-Box",
+    "descricao": "Lumina-Box é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Graduada",
+    "tipo": "Graduada",
+    "ciclo": "Ciclo 2025",
+    "trilha": "Tecnologia",
+    "area": "Govtech",
+    "trl": 2,
+    "proximoTrl": 3,
+    "score": 67,
+    "farol": "Amarelo",
+    "prontaEvolucao": false,
+    "responsavel": "Ana Ribeiro",
+    "ultimaAtualizacao": "2026-07-07",
+    "indicadores": [
+      "IND009",
+      "IND010",
+      "IND011",
+      "IND012",
+      "IND013"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "nome": "Marisqueiras da Ilha",
+    "descricao": "Marisqueiras da Ilha é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Ativa",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2026",
+    "trilha": "Impacto",
+    "area": "Energia",
+    "trl": 3,
+    "proximoTrl": 4,
+    "score": 74,
+    "farol": "Amarelo",
+    "prontaEvolucao": false,
+    "responsavel": "Carlos Lima",
+    "ultimaAtualizacao": "2026-07-08",
+    "indicadores": [
+      "IND010",
+      "IND011",
+      "IND012",
+      "IND013",
+      "IND014"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "nome": "Matrix - Historic",
+    "descricao": "Matrix - Historic é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2024",
+    "trilha": "Validação",
+    "area": "Indústria Criativa",
+    "trl": 4,
+    "proximoTrl": 5,
+    "score": 81,
+    "farol": "Verde",
+    "prontaEvolucao": true,
+    "responsavel": "Lia Castro",
+    "ultimaAtualizacao": "2026-07-09",
+    "indicadores": [
+      "IND001",
+      "IND002",
+      "IND003",
+      "IND004",
+      "IND005"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "nome": "MedSim",
+    "descricao": "MedSim é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2025",
+    "trilha": "Tração",
+    "area": "Sustentabilidade",
+    "trl": 5,
+    "proximoTrl": 6,
+    "score": 88,
+    "farol": "Verde",
+    "prontaEvolucao": true,
+    "responsavel": "Marcos Paiva",
+    "ultimaAtualizacao": "2026-07-10",
+    "indicadores": [
+      "IND002",
+      "IND003",
+      "IND004",
+      "IND005",
+      "IND006"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "nome": "Mel da Tribo",
+    "descricao": "Mel da Tribo é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Pré-incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2026",
+    "trilha": "Mercado",
+    "area": "Bioeconomia",
+    "trl": 6,
+    "proximoTrl": 7,
+    "score": 95,
+    "farol": "Verde",
+    "prontaEvolucao": true,
+    "responsavel": "Patrícia Neves",
+    "ultimaAtualizacao": "2026-07-11",
+    "indicadores": [
+      "IND003",
+      "IND004",
+      "IND005",
+      "IND006",
+      "IND007"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "nome": "Meu Sacramento",
+    "descricao": "Meu Sacramento é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Graduada",
+    "tipo": "Graduada",
+    "ciclo": "Ciclo 2024",
+    "trilha": "Tecnologia",
+    "area": "Agrotech",
+    "trl": 7,
+    "proximoTrl": 8,
+    "score": 45,
+    "farol": "Vermelho",
+    "prontaEvolucao": false,
+    "responsavel": "João Mendes",
+    "ultimaAtualizacao": "2026-07-12",
+    "indicadores": [
+      "IND004",
+      "IND005",
+      "IND006",
+      "IND007",
+      "IND008"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "nome": "MindFlux",
+    "descricao": "MindFlux é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Ativa",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2025",
+    "trilha": "Impacto",
+    "area": "Healthtech",
+    "trl": 8,
+    "proximoTrl": 9,
+    "score": 52,
+    "farol": "Vermelho",
+    "prontaEvolucao": false,
+    "responsavel": "Equipe Marandu",
+    "ultimaAtualizacao": "2026-07-13",
+    "indicadores": [
+      "IND005",
+      "IND006",
+      "IND007",
+      "IND008",
+      "IND009"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "nome": "Miniverso",
+    "descricao": "Miniverso é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2026",
+    "trilha": "Validação",
+    "area": "Edtech",
+    "trl": 9,
+    "proximoTrl": 9,
+    "score": 59,
+    "farol": "Amarelo",
+    "prontaEvolucao": false,
+    "responsavel": "Ana Ribeiro",
+    "ultimaAtualizacao": "2026-07-14",
+    "indicadores": [
+      "IND006",
+      "IND007",
+      "IND008",
+      "IND009",
+      "IND010"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "nome": "Mosagro",
+    "descricao": "Mosagro é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2024",
+    "trilha": "Tração",
+    "area": "Govtech",
+    "trl": 1,
+    "proximoTrl": 2,
+    "score": 66,
+    "farol": "Amarelo",
+    "prontaEvolucao": false,
+    "responsavel": "Carlos Lima",
+    "ultimaAtualizacao": "2026-07-15",
+    "indicadores": [
+      "IND007",
+      "IND008",
+      "IND009",
+      "IND010",
+      "IND011"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "nome": "MoveSaúde",
+    "descricao": "MoveSaúde é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Pré-incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2025",
+    "trilha": "Mercado",
+    "area": "Energia",
+    "trl": 2,
+    "proximoTrl": 3,
+    "score": 73,
+    "farol": "Amarelo",
+    "prontaEvolucao": false,
+    "responsavel": "Lia Castro",
+    "ultimaAtualizacao": "2026-07-16",
+    "indicadores": [
+      "IND008",
+      "IND009",
+      "IND010",
+      "IND011",
+      "IND012"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "nome": "MyraTech",
+    "descricao": "MyraTech é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Graduada",
+    "tipo": "Graduada",
+    "ciclo": "Ciclo 2026",
+    "trilha": "Tecnologia",
+    "area": "Indústria Criativa",
+    "trl": 3,
+    "proximoTrl": 4,
+    "score": 80,
+    "farol": "Verde",
+    "prontaEvolucao": true,
+    "responsavel": "Marcos Paiva",
+    "ultimaAtualizacao": "2026-07-17",
+    "indicadores": [
+      "IND009",
+      "IND010",
+      "IND011",
+      "IND012",
+      "IND013"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "nome": "NativaBio",
+    "descricao": "NativaBio é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Ativa",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2024",
+    "trilha": "Impacto",
+    "area": "Sustentabilidade",
+    "trl": 4,
+    "proximoTrl": 5,
+    "score": 87,
+    "farol": "Verde",
+    "prontaEvolucao": true,
+    "responsavel": "Patrícia Neves",
+    "ultimaAtualizacao": "2026-07-18",
+    "indicadores": [
+      "IND010",
+      "IND011",
+      "IND012",
+      "IND013",
+      "IND014"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "nome": "NefroVida",
+    "descricao": "NefroVida é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2025",
+    "trilha": "Validação",
+    "area": "Bioeconomia",
+    "trl": 5,
+    "proximoTrl": 6,
+    "score": 94,
+    "farol": "Verde",
+    "prontaEvolucao": true,
+    "responsavel": "João Mendes",
+    "ultimaAtualizacao": "2026-07-19",
+    "indicadores": [
+      "IND001",
+      "IND002",
+      "IND003",
+      "IND004",
+      "IND005"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "nome": "Nexgreen",
+    "descricao": "Nexgreen é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2026",
+    "trilha": "Tração",
+    "area": "Agrotech",
+    "trl": 6,
+    "proximoTrl": 7,
+    "score": 44,
+    "farol": "Vermelho",
+    "prontaEvolucao": false,
+    "responsavel": "Equipe Marandu",
+    "ultimaAtualizacao": "2026-07-20",
+    "indicadores": [
+      "IND002",
+      "IND003",
+      "IND004",
+      "IND005",
+      "IND006"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "nome": "ObradorIA",
+    "descricao": "ObradorIA é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Pré-incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2024",
+    "trilha": "Mercado",
+    "area": "Healthtech",
+    "trl": 7,
+    "proximoTrl": 8,
+    "score": 51,
+    "farol": "Vermelho",
+    "prontaEvolucao": false,
+    "responsavel": "Ana Ribeiro",
+    "ultimaAtualizacao": "2026-07-21",
+    "indicadores": [
+      "IND003",
+      "IND004",
+      "IND005",
+      "IND006",
+      "IND007"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "nome": "Oji",
+    "descricao": "Oji é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Graduada",
+    "tipo": "Graduada",
+    "ciclo": "Ciclo 2025",
+    "trilha": "Tecnologia",
+    "area": "Edtech",
+    "trl": 8,
+    "proximoTrl": 9,
+    "score": 58,
+    "farol": "Amarelo",
+    "prontaEvolucao": false,
+    "responsavel": "Carlos Lima",
+    "ultimaAtualizacao": "2026-07-22",
+    "indicadores": [
+      "IND004",
+      "IND005",
+      "IND006",
+      "IND007",
+      "IND008"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "nome": "Orquesa",
+    "descricao": "Orquesa é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Ativa",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2026",
+    "trilha": "Impacto",
+    "area": "Govtech",
+    "trl": 9,
+    "proximoTrl": 9,
+    "score": 65,
+    "farol": "Amarelo",
+    "prontaEvolucao": false,
+    "responsavel": "Lia Castro",
+    "ultimaAtualizacao": "2026-07-01",
+    "indicadores": [
+      "IND005",
+      "IND006",
+      "IND007",
+      "IND008",
+      "IND009"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "nome": "Paliartech",
+    "descricao": "Paliartech é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2024",
+    "trilha": "Validação",
+    "area": "Energia",
+    "trl": 1,
+    "proximoTrl": 2,
+    "score": 72,
+    "farol": "Amarelo",
+    "prontaEvolucao": false,
+    "responsavel": "Marcos Paiva",
+    "ultimaAtualizacao": "2026-07-02",
+    "indicadores": [
+      "IND006",
+      "IND007",
+      "IND008",
+      "IND009",
+      "IND010"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "nome": "PimTech",
+    "descricao": "PimTech é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2025",
+    "trilha": "Tração",
+    "area": "Indústria Criativa",
+    "trl": 2,
+    "proximoTrl": 3,
+    "score": 79,
+    "farol": "Amarelo",
+    "prontaEvolucao": false,
+    "responsavel": "Patrícia Neves",
+    "ultimaAtualizacao": "2026-07-03",
+    "indicadores": [
+      "IND007",
+      "IND008",
+      "IND009",
+      "IND010",
+      "IND011"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "nome": "PrintShadow - Smart",
+    "descricao": "PrintShadow - Smart é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Pré-incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2026",
+    "trilha": "Mercado",
+    "area": "Sustentabilidade",
+    "trl": 3,
+    "proximoTrl": 4,
+    "score": 86,
+    "farol": "Verde",
+    "prontaEvolucao": true,
+    "responsavel": "João Mendes",
+    "ultimaAtualizacao": "2026-07-04",
+    "indicadores": [
+      "IND008",
+      "IND009",
+      "IND010",
+      "IND011",
+      "IND012"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "nome": "Ritcco",
+    "descricao": "Ritcco é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Graduada",
+    "tipo": "Graduada",
+    "ciclo": "Ciclo 2024",
+    "trilha": "Tecnologia",
+    "area": "Bioeconomia",
+    "trl": 4,
+    "proximoTrl": 5,
+    "score": 93,
+    "farol": "Verde",
+    "prontaEvolucao": true,
+    "responsavel": "Equipe Marandu",
+    "ultimaAtualizacao": "2026-07-05",
+    "indicadores": [
+      "IND009",
+      "IND010",
+      "IND011",
+      "IND012",
+      "IND013"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "nome": "RX GunTech",
+    "descricao": "RX GunTech é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Ativa",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2025",
+    "trilha": "Impacto",
+    "area": "Agrotech",
+    "trl": 5,
+    "proximoTrl": 6,
+    "score": 43,
+    "farol": "Vermelho",
+    "prontaEvolucao": false,
+    "responsavel": "Ana Ribeiro",
+    "ultimaAtualizacao": "2026-07-06",
+    "indicadores": [
+      "IND010",
+      "IND011",
+      "IND012",
+      "IND013",
+      "IND014"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "nome": "SolarCool Drive",
+    "descricao": "SolarCool Drive é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2026",
+    "trilha": "Validação",
+    "area": "Healthtech",
+    "trl": 6,
+    "proximoTrl": 7,
+    "score": 50,
+    "farol": "Vermelho",
+    "prontaEvolucao": false,
+    "responsavel": "Carlos Lima",
+    "ultimaAtualizacao": "2026-07-07",
+    "indicadores": [
+      "IND001",
+      "IND002",
+      "IND003",
+      "IND004",
+      "IND005"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "nome": "Solnet",
+    "descricao": "Solnet é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2024",
+    "trilha": "Tração",
+    "area": "Edtech",
+    "trl": 7,
+    "proximoTrl": 8,
+    "score": 57,
+    "farol": "Amarelo",
+    "prontaEvolucao": false,
+    "responsavel": "Lia Castro",
+    "ultimaAtualizacao": "2026-07-08",
+    "indicadores": [
+      "IND002",
+      "IND003",
+      "IND004",
+      "IND005",
+      "IND006"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "nome": "SunAir",
+    "descricao": "SunAir é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Pré-incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2025",
+    "trilha": "Mercado",
+    "area": "Govtech",
+    "trl": 8,
+    "proximoTrl": 9,
+    "score": 64,
+    "farol": "Amarelo",
+    "prontaEvolucao": false,
+    "responsavel": "Marcos Paiva",
+    "ultimaAtualizacao": "2026-07-09",
+    "indicadores": [
+      "IND003",
+      "IND004",
+      "IND005",
+      "IND006",
+      "IND007"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "nome": "Torre Forte Quant",
+    "descricao": "Torre Forte Quant é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Graduada",
+    "tipo": "Graduada",
+    "ciclo": "Ciclo 2026",
+    "trilha": "Tecnologia",
+    "area": "Energia",
+    "trl": 9,
+    "proximoTrl": 9,
+    "score": 71,
+    "farol": "Amarelo",
+    "prontaEvolucao": false,
+    "responsavel": "Patrícia Neves",
+    "ultimaAtualizacao": "2026-07-10",
+    "indicadores": [
+      "IND004",
+      "IND005",
+      "IND006",
+      "IND007",
+      "IND008"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "nome": "Vigia Rural",
+    "descricao": "Vigia Rural é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Ativa",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2024",
+    "trilha": "Impacto",
+    "area": "Indústria Criativa",
+    "trl": 1,
+    "proximoTrl": 2,
+    "score": 78,
+    "farol": "Amarelo",
+    "prontaEvolucao": false,
+    "responsavel": "João Mendes",
+    "ultimaAtualizacao": "2026-07-11",
+    "indicadores": [
+      "IND005",
+      "IND006",
+      "IND007",
+      "IND008",
+      "IND009"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "nome": "Vitrus Biotecnologia",
+    "descricao": "Vitrus Biotecnologia é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2025",
+    "trilha": "Validação",
+    "area": "Sustentabilidade",
+    "trl": 2,
+    "proximoTrl": 3,
+    "score": 85,
+    "farol": "Verde",
+    "prontaEvolucao": true,
+    "responsavel": "Equipe Marandu",
+    "ultimaAtualizacao": "2026-07-12",
+    "indicadores": [
+      "IND006",
+      "IND007",
+      "IND008",
+      "IND009",
+      "IND010"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "nome": "Viva",
+    "descricao": "Viva é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2026",
+    "trilha": "Tração",
+    "area": "Bioeconomia",
+    "trl": 3,
+    "proximoTrl": 4,
+    "score": 92,
+    "farol": "Verde",
+    "prontaEvolucao": true,
+    "responsavel": "Ana Ribeiro",
+    "ultimaAtualizacao": "2026-07-13",
+    "indicadores": [
+      "IND007",
+      "IND008",
+      "IND009",
+      "IND010",
+      "IND011"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "nome": "World Connection",
+    "descricao": "World Connection é uma empresa acompanhada pela Incubadora Marandu no ciclo atual.",
+    "status": "Pré-incubada",
+    "tipo": "Incubada",
+    "ciclo": "Ciclo 2024",
+    "trilha": "Mercado",
+    "area": "Agrotech",
+    "trl": 4,
+    "proximoTrl": 5,
+    "score": 42,
+    "farol": "Vermelho",
+    "prontaEvolucao": false,
+    "responsavel": "Carlos Lima",
+    "ultimaAtualizacao": "2026-07-14",
+    "indicadores": [
+      "IND008",
+      "IND009",
+      "IND010",
+      "IND011",
+      "IND012"
+    ],
+    "evidencias": [],
+    "documentos": [],
+    "historico": [
+      {
+        "data": "2026-07-22",
+        "evento": "Atualização de acompanhamento registrada."
+      },
+      {
+        "data": "2026-06-18",
+        "evento": "Mentoria realizada e vinculada ao plano de ação."
+      }
+    ]
+  }
+]

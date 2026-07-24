@@ -1,0 +1,67 @@
+[
+  {
+    "id": "EVD001",
+    "indicadorId": "IND014",
+    "empresaId": 1,
+    "titulo": "Roadmap tecnológico",
+    "descricao": "Evidência vinculada a indicador CERNE.",
+    "tipo": "Roadmap",
+    "arquivo": "#",
+    "responsavel": "Ana Ribeiro",
+    "data": "2026-07-22",
+    "status": "Validada",
+    "observacao": "Registro demonstrativo para o MVP estático."
+  },
+  {
+    "id": "EVD002",
+    "indicadorId": "IND015",
+    "empresaId": 2,
+    "titulo": "Relatório financeiro",
+    "descricao": "Evidência vinculada a indicador CERNE.",
+    "tipo": "Relatório",
+    "arquivo": "#",
+    "responsavel": "Carlos Lima",
+    "data": "2026-07-21",
+    "status": "Em análise",
+    "observacao": "Registro demonstrativo para o MVP estático."
+  },
+  {
+    "id": "EVD003",
+    "indicadorId": "IND010",
+    "empresaId": 3,
+    "titulo": "Plano de ação",
+    "descricao": "Evidência vinculada a indicador CERNE.",
+    "tipo": "Plano",
+    "arquivo": "#",
+    "responsavel": "Lia Castro",
+    "data": "2026-07-20",
+    "status": "Pendente",
+    "observacao": "Registro demonstrativo para o MVP estático."
+  },
+  {
+    "id": "EVD004",
+    "indicadorId": "IND017",
+    "empresaId": 4,
+    "titulo": "Contrato piloto",
+    "descricao": "Evidência vinculada a indicador CERNE.",
+    "tipo": "Contrato",
+    "arquivo": "#",
+    "responsavel": "Marcos Paiva",
+    "data": "2026-07-19",
+    "status": "Validada",
+    "observacao": "Registro demonstrativo para o MVP estático."
+  },
+  {
+    "id": "EVD005",
+    "indicadorId": "IND045",
+    "empresaId": 5,
+    "titulo": "Ata de mentoria",
+    "descricao": "Evidência vinculada a indicador CERNE.",
+    "tipo": "Ata",
+    "arquivo": "#",
+    "responsavel": "Patrícia Neves",
+    "data": "2026-07-18",
+    "status": "Validada",
+    "observacao": "Registro demonstrativo para o MVP estático."
+  }
+]

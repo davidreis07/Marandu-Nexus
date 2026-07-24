@@ -1,0 +1,51 @@
+[
+  {
+    "id": "DOC001",
+    "nome": "Plano financeiro",
+    "categoria": "Planejamento",
+    "obrigatorio": true,
+    "validadeDias": 365
+  },
+  {
+    "id": "DOC002",
+    "nome": "Plano estratégico",
+    "categoria": "Planejamento",
+    "obrigatorio": true,
+    "validadeDias": 365
+  },
+  {
+    "id": "DOC003",
+    "nome": "Roadmap",
+    "categoria": "Operacional",
+    "obrigatorio": true,
+    "validadeDias": 180
+  },
+  {
+    "id": "DOC004",
+    "nome": "Pitch",
+    "categoria": "Operacional",
+    "obrigatorio": true,
+    "validadeDias": 180
+  },
+  {
+    "id": "DOC005",
+    "nome": "Contrato",
+    "categoria": "Jurídico",
+    "obrigatorio": true,
+    "validadeDias": 180
+  },
+  {
+    "id": "DOC006",
+    "nome": "NDA",
+    "categoria": "Jurídico",
+    "obrigatorio": false,
+    "validadeDias": 180
+  },
+  {
+    "id": "DOC007",
+    "nome": "Relatórios",
+    "categoria": "Operacional",
+    "obrigatorio": false,
+    "validadeDias": 180
+  }
+]

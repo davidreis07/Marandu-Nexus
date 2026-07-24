@@ -1,0 +1,43 @@
+{
+  "tiposEvidencia": [
+    "Roadmap",
+    "Relatório",
+    "Plano",
+    "Contrato",
+    "Ata",
+    "Pitch"
+  ],
+  "statusEmpresa": [
+    "Incubada",
+    "Incubada",
+    "Pré-incubada",
+    "Graduada",
+    "Ativa"
+  ],
+  "trilhas": [
+    "Validação",
+    "Tração",
+    "Mercado",
+    "Tecnologia",
+    "Impacto"
+  ],
+  "areas": [
+    "Bioeconomia",
+    "Agrotech",
+    "Healthtech",
+    "Edtech",
+    "Govtech",
+    "Energia",
+    "Indústria Criativa",
+    "Sustentabilidade"
+  ],
+  "perfis": [
+    "Administrador",
+    "Gestor",
+    "Analista",
+    "Mentor",
+    "Empresa",
+    "Auditor",
+    "Conselho"
+  ]
+}
