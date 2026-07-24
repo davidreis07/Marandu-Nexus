@@ -1,8 +1,9 @@
 import { icon } from "./components/icons.js";
-import { CompanyEngine } from "./engines/companyEngine.js";
-import { IndicatorEngine } from "./engines/indicatorEngine.js";
+import { createBusinessEngine } from "./core/business-engine.js";
 import { DataService } from "./services/dataService.js";
-import { DashboardService } from "./services/dashboardService.js";
+import { EmpresaService } from "./services/empresa-service.js";
+import { EvidenciaService } from "./services/evidencia-service.js";
+import { IndicadorService } from "./services/indicador-service.js";
 
 let state = {
   empresas: [],
@@ -11,6 +12,7 @@ let state = {
   documentos: [],
   configuracoes: {},
 };
+let businessEngine;
 
 const siteMap = [
   ["Visão e gestão", "dashboard", ["Dashboard Executivo", "Dashboard Operacional", "Alertas institucionais", "Prioridades da diretoria"]],
@@ -63,7 +65,7 @@ function toast(text) {
 }
 
 function renderDashboard() {
-  document.getElementById("kpiGrid").innerHTML = DashboardService.getKpis(state).map(([label, value, hint]) => `
+  document.getElementById("kpiGrid").innerHTML = businessEngine.getDashboardKpis().map(([label, value, hint]) => `
     <div class="kpi-card"><span>${label}</span><strong>${value}</strong><small>${hint}</small></div>
   `).join("");
 
@@ -72,15 +74,17 @@ function renderDashboard() {
     <div class="chart-column"><i style="height:${v * 2}px"></i><b>${v}%</b><span>${m}</span></div>
   `).join("");
 
-  document.getElementById("farolLegend").innerHTML = CompanyEngine.getFarolCounts(state.empresas).map(([label, value]) => `
+  const empresas = EmpresaService.list(businessEngine);
+  const farolCounts = ["Verde", "Amarelo", "Vermelho"].map((farol) => [farol, empresas.filter((empresa) => empresa.farol === farol).length]);
+  document.getElementById("farolLegend").innerHTML = farolCounts.map(([label, value]) => `
     <div class="legend-row"><span><i class="dot ${farolClass(label)}"></i>${label}</span><strong>${value}</strong></div>
   `).join("");
 
-  document.getElementById("readyList").innerHTML = CompanyEngine.getReady(state.empresas).slice(0, 6).map((c) => `
+  document.getElementById("readyList").innerHTML = empresas.filter((empresa) => empresa.prontaEvolucao).slice(0, 6).map((c) => `
     <div class="list-item"><div><b>${c.nome}</b><span>TRL ${c.trl} para TRL ${c.proximoTrl}</span></div><span class="badge green">Apta</span></div>
   `).join("");
 
-  document.getElementById("riskList").innerHTML = CompanyEngine.getRisk(state.empresas).slice(0, 6).map((c) => `
+  document.getElementById("riskList").innerHTML = empresas.filter((empresa) => empresa.farol !== "Verde").slice(0, 6).map((c) => `
     <div class="list-item"><div><b>${c.nome}</b><span>${c.area} · responsável ${c.responsavel}</span></div><span class="badge ${farolClass(c.farol)}">${c.farol}</span></div>
   `).join("");
 }
@@ -102,33 +106,35 @@ function renderOperations() {
     <div class="operation-card"><b>${title}</b><span>${text}</span></div>
   `).join("");
 
-  document.getElementById("dailyAlerts").innerHTML = CompanyEngine.getRisk(state.empresas).slice(0, 3).map((c) => `
-    <div class="list-item"><div><b>${c.nome}</b><span>Revisar checklist e evidências obrigatórias</span></div><span class="badge ${farolClass(c.farol)}">${c.farol}</span></div>
+  document.getElementById("dailyAlerts").innerHTML = businessEngine.getAlerts().slice(0, 4).map((alert) => `
+    <div class="list-item"><div><b>${alert.title}</b><span>${alert.message}</span></div><span class="badge ${alert.type === "success" ? "green" : alert.type === "critical" ? "red" : "yellow"}">${alert.type === "critical" ? "Crítico" : alert.type === "success" ? "OK" : "Atenção"}</span></div>
   `).join("");
 }
 
 function renderCompanies() {
   const filter = document.getElementById("companyFilter").value;
-  const rows = CompanyEngine.filterByStatus(state.empresas, filter);
+  const rows = EmpresaService.list(businessEngine).filter((empresa) => !filter || empresa.status === filter);
   document.getElementById("companyRows").innerHTML = rows.map((c) => `
     <tr>
       <td><div class="company-name"><span class="avatar">${c.nome.slice(0, 2).toUpperCase()}</span><b>${c.nome}</b></div></td>
       <td>${c.responsavel}</td><td><span class="badge orange">TRL ${c.trl}</span></td><td>${c.area}</td>
       <td><span class="badge ${statusClass(c.status)}">${c.status}</span></td>
       <td><span class="badge ${farolClass(c.farol)}">${c.farol}</span></td>
+      <td><div class="progress"><i style="width:${c.compliance.percentage}%"></i></div><small>${c.compliance.percentage}% · ${c.compliance.completed} atendidos · ${c.compliance.pending} pendentes</small></td>
+      <td>${c.ultimaAtualizacao}</td>
       <td><button class="ghost-button" data-company="${c.id}" type="button">Ver Perfil</button></td>
     </tr>
   `).join("");
 }
 
 function openCompany(id) {
-  const c = CompanyEngine.getById(state.empresas, id);
-  const companyIndicators = c.indicadores.map((indicatorId) => state.indicadores.find((i) => i.id === indicatorId)).filter(Boolean);
+  const c = EmpresaService.find(businessEngine, id);
+  const companyIndicators = businessEngine.getCompanyIndicators(c);
   const checks = [
-    ["Indicador obrigatório", c.score > 65],
+    ["Indicador obrigatório", c.compliance.pending === 0],
     ["Documento obrigatório", c.score > 70],
-    ["Evidência aprovada", c.score > 80],
-    ["Validação do gestor", c.prontaEvolucao],
+    ["Evidência aprovada", !c.trlStatus.reasons.includes("Sem evidências aprovadas")],
+    ["Validação do gestor", !c.trlStatus.blocked],
   ];
 
   document.getElementById("companyDetail").innerHTML = `
@@ -137,13 +143,14 @@ function openCompany(id) {
       <div class="mini-card"><span>Status</span><strong>${c.status}</strong></div>
       <div class="mini-card"><span>TRL atual</span><strong>${c.trl}</strong></div>
       <div class="mini-card"><span>Próximo TRL</span><strong>${c.proximoTrl}</strong></div>
-      <div class="mini-card"><span>Score</span><strong>${c.score}%</strong></div>
+      <div class="mini-card"><span>Conformidade</span><strong>${c.compliance.percentage}%</strong></div>
     </div>
     <article class="panel"><div class="panel-title"><h2>Resumo</h2><span>${c.ciclo} · ${c.trilha}</span></div><p>${c.descricao}</p></article>
     <article class="panel"><div class="panel-title"><h2>Checklist obrigatório</h2><span>${c.prontaEvolucao ? "Completo" : "Em evolução"}</span></div>
-      <div class="progress"><i style="width:${c.score}%"></i></div>
+      <div class="progress"><i style="width:${c.compliance.percentage}%"></i></div>
       <div class="checklist">${checks.map(([label, done]) => `<div class="check-row ${done ? "done" : "pending"}"><span>${done ? "☑" : "☐"}</span><b>${label}</b></div>`).join("")}</div>
     </article>
+    <article class="panel"><div class="panel-title"><h2>Decisão do TRL Engine</h2><span>${c.trlStatus.status}</span></div><p>${c.trlStatus.reasons.join("; ") || "Requisitos mínimos atendidos para evolução simulada."}</p></article>
     <article class="panel"><div class="panel-title"><h2>Indicadores CERNE vinculados</h2><span>Motor de Indicadores</span></div>
       <div class="compact-list">${companyIndicators.map((i) => `<div class="list-item"><div><b>${i.id} · ${i.nome}</b><span>${i.processo}</span></div><span class="badge ${statusClass(i.status)}">${i.status}</span></div>`).join("")}</div>
     </article>
@@ -189,8 +196,8 @@ function renderIndicators() {
   const levelFilter = document.getElementById("indicatorLevel");
   const audienceFilter = document.getElementById("indicatorAudience");
   const searchInput = document.getElementById("indicatorSearch");
-  const levels = IndicatorEngine.getLevels(state.indicadores);
-  const audiences = IndicatorEngine.getAudiences(state.indicadores);
+  const levels = IndicadorService.levels(businessEngine);
+  const audiences = IndicadorService.audiences(businessEngine);
 
   if (levelFilter && levelFilter.options.length === 1) {
     levelFilter.insertAdjacentHTML("beforeend", levels.map((level) => `<option>${level}</option>`).join(""));
@@ -199,11 +206,11 @@ function renderIndicators() {
     audienceFilter.insertAdjacentHTML("beforeend", audiences.map((audience) => `<option>${audience}</option>`).join(""));
   }
 
-  document.getElementById("indicatorCards").innerHTML = IndicatorEngine.summarize(state.indicadores).map(([name, value, hint]) => `
+  document.getElementById("indicatorCards").innerHTML = IndicadorService.summary(businessEngine).map(([name, value, hint]) => `
     <article class="indicator-card"><div class="panel-title"><h2>${name}</h2><span class="badge orange">${value}</span></div><p>${hint}</p></article>
   `).join("");
 
-  const filtered = IndicatorEngine.filter(state.indicadores, {
+  const filtered = IndicadorService.list(businessEngine, {
     query: searchInput?.value || "",
     level: levelFilter?.value || "",
     audience: audienceFilter?.value || "",
@@ -221,23 +228,22 @@ function renderIndicators() {
 }
 
 function renderTrl() {
-  document.getElementById("trlRoadmap").innerHTML = Array.from({ length: 9 }, (_, i) => {
-    const trl = i + 1;
-    const count = state.empresas.filter((c) => c.trl === trl).length;
+  document.getElementById("trlRoadmap").innerHTML = businessEngine.getTrlDistribution().map(({ trl, total }) => {
     const cls = trl < 5 ? "done" : trl < 8 ? "current" : "locked";
-    return `<div class="trl-step ${cls}"><strong>TRL ${trl}</strong><span>${count} empresa(s)</span><p>${trl < 4 ? "Conceito e prova técnica." : trl < 7 ? "Validação e piloto." : "Mercado e escala."}</p></div>`;
+    return `<div class="trl-step ${cls}"><strong>TRL ${trl}</strong><span>${total} empresa(s)</span><p>${trl < 4 ? "Conceito e prova técnica." : trl < 7 ? "Validação e piloto." : "Mercado e escala."}</p></div>`;
   }).join("");
 }
 
 function renderEvidences() {
-  document.getElementById("evidenceRows").innerHTML = state.evidencias.map((e) => {
-    const empresa = state.empresas.find((c) => c.id === e.empresaId);
+  const empresas = EmpresaService.list(businessEngine);
+  document.getElementById("evidenceRows").innerHTML = EvidenciaService.list(businessEngine).map((e) => {
+    const empresa = empresas.find((c) => c.id === e.empresaId);
     return `<tr><td><b>${e.titulo}</b><br><small>${e.indicadorId}</small></td><td>${empresa?.nome || "-"}</td><td>${e.data}</td><td>${e.responsavel}</td><td><span class="badge ${statusClass(e.status)}">${e.status}</span></td><td><button class="ghost-button" type="button" data-toast="Visualização simulada">Visualizar</button> <button class="ghost-button" type="button" data-toast="Download simulado">Download</button></td></tr>`;
   }).join("");
 }
 
 function renderCards() {
-  document.getElementById("documentCards").innerHTML = state.documentos.map((d) => `
+  document.getElementById("documentCards").innerHTML = businessEngine.getDocumentos().map((d) => `
     <article class="doc-card">${icon("folder")}<h2>${d.nome}</h2><p>Modelo configurável de categoria ${d.categoria.toLowerCase()}.</p><button class="ghost-button" data-toast="Modelo aberto" type="button">Abrir modelo</button></article>
   `).join("");
   document.getElementById("reportCards").innerHTML = ["Relatório executivo mensal", "Auditoria CERNE", "Carteira de empresas", "Evolução TRL", "Impacto regional", "Pendências por responsável"].map((r) => `
@@ -261,7 +267,7 @@ function renderKanban() {
 
 function renderMentoring() {
   document.getElementById("calendar").innerHTML = Array.from({ length: 21 }, (_, i) => `<div class="day ${[3, 8, 15].includes(i) ? "active" : ""}"><b>${i + 1}</b><span>${[3, 8, 15].includes(i) ? "Mentoria" : ""}</span></div>`).join("");
-  document.getElementById("mentoringList").innerHTML = state.empresas.slice(0, 3).map((empresa) => `<div class="list-item"><div><b>${empresa.nome} com mentor especialista</b><span>Agenda confirmada</span></div><span class="badge orange">Hoje</span></div>`).join("");
+  document.getElementById("mentoringList").innerHTML = EmpresaService.list(businessEngine).slice(0, 3).map((empresa) => `<div class="list-item"><div><b>${empresa.nome} com mentor especialista</b><span>Agenda confirmada</span></div><span class="badge orange">Hoje</span></div>`).join("");
 }
 
 function renderAudit() {
@@ -330,6 +336,14 @@ function renderAll() {
 async function init() {
   try {
     state = await DataService.loadAll();
+    businessEngine = createBusinessEngine(state);
+    businessEngine.on("state:changed", (snapshot) => {
+      state = snapshot;
+      renderDashboard();
+      renderCompanies();
+      renderTrl();
+      renderEvidences();
+    });
     bindEvents();
     renderAll();
   } catch (error) {
